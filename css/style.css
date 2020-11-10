@@ -11,14 +11,11 @@ Dark green: #28b485
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 body {
-  padding: 30px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-  overflow: hidden; }
+  box-sizing: border-box; }
 
 @keyframes moveInLeft {
   0% {
@@ -45,6 +42,40 @@ body {
   100% {
     transform: translate(0);
     opacity: 1; } }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+
+.top {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+/*  */
+.bottom {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; }
+
+body {
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  overflow: hidden; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -108,33 +139,43 @@ body {
 .logo {
   height: 35px; }
 
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden; }
-
-.top {
-  display: block;
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 30px;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; }
-
-/*  */
-.bottom {
-  display: block;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 19px;
-  animation-name: moveInRight;
-  animation-duration: 2s;
-  animation-timing-function: ease-in; }
-
 .container {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+
+.top {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+/*  */
+.bottom {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; }
+
+body {
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  overflow: hidden; }
