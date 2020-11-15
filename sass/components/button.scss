@@ -49,3 +49,30 @@
     animation-timing-function: ease-out;
     }
 }
+.btn-text
+{ 
+    padding: 0 0.5rem;
+    &:link,
+    &:visited
+    {
+        color: $color-primary-light;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 2px solid $color-primary-light;
+    }
+    &:hover
+    {
+        transition: all 500ms;
+        background-color: $color-primary-dark;
+        transition: background-color 500ms;
+        color: whitesmoke;
+        border-radius: 10px;
+        box-shadow: 1rem 1.5rem 1rem rgba($color-black,0.3);
+        transform:translateY(-0.2rem);
+    }
+    &:active
+    {
+        box-shadow: 0 .5rem 2rem rgba($color-black,0.3);
+        transform:translateY(0);
+    }
+}
